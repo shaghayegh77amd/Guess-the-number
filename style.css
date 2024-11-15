@@ -1,0 +1,47 @@
+body{
+    background-color: black;
+    color:white;
+}
+p , span{
+    font-size: 16px;
+    line-height: 24px;
+}
+#main{
+    max-width: 400px;
+    padding: 16px;
+    position: absolute;
+    top: 50%;
+    right: 50%;
+    transform: translate(50%,-50%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #fff;
+    border-radius: 16px;
+}
+#main .orange{
+    color: orange;
+    margin-left: 8px;
+}
+#main .red{
+    color: red;
+    margin-left: 8px;
+}
+#main input{
+    background-color: transparent;
+    border: 1px solid #fff;
+    border-radius: 8px;
+    line-height: 24px;
+    padding: 0 8px;
+    margin-right: 8px;
+    color: #fff;
+}
+#main button{
+    background-color: transparent;
+    border: 1px solid #fff;
+    border-radius: 8px;
+    line-height: 24px;
+    padding: 0 8px;
+    color: #fff;
+    display: inline-block;
+}
