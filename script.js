@@ -12,15 +12,15 @@ function guessNumbers() {
     if (inputNumber == number) {
       main.innerHTML = "<p>you win</p>";
     } else if (input.value < number) {
-      guessNumber.innerHTML += `<span class='less'>${inputNumber}</span>`;
+      guessNumber.innerHTML += `<span class='orange'>${inputNumber}</span>`;
     } else {
-      guessNumber.innerHTML += `<span class='more'>${inputNumber}</span>`;
+      guessNumber.innerHTML += `<span class='red'>${inputNumber}</span>`;
     }
     input.value = "";
     limitChance--;
     description.innerHTML = `You have ${limitChance} chances`;
   } else {
-    main.innerHTML = "<p>you lost</p>";
+    main.innerHTML = `<p>you lost! :( the number was ${number}</p>`;
   }
 }
 
